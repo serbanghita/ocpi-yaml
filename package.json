@@ -1,0 +1,16 @@
+{
+  "name": "ocpi-yaml",
+  "description": "",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.13.1",
+    "@stoplight/spectral-cli": "^6.11.0"
+  },
+  "scripts": {
+    "docs": "openapi-generator-cli generate -i ./src/tariff.yml -g typescript -o ./.tmp --skip-validate-spec",
+    "lint": "spectral lint ./src/tariff.yml",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
